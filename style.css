@@ -1,0 +1,649 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+:root {
+    --mainColor : #22303d;
+    --whiteColor : white;
+    --secendrayColor: #182127;
+    --colorthree : #a9fffd;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+#page {
+    background-color: var(--mainColor);
+    /* background-color: #2A3340; */
+}
+header {
+    display: flex;
+    width: 850px;
+    margin: auto;
+    align-items: center;
+    padding: 70px;
+}
+header #p1 {
+    position: relative;
+    height: 100px;
+    padding: 10px;
+}
+header #p1::before {
+    content: "";
+    background-color: #d3d3d3d5;
+    height: 100%;
+    position: absolute;
+    width: 2px;
+    left: -5px;
+}
+header img {
+    width: 350px;
+}
+header h1 {
+    font-size: 3em;
+    color: var(--whiteColor);
+    line-height: 1.6;
+
+}
+#p1 .sm {
+    display: flex;
+}
+#p1 p{
+    font-size: 1.2em;
+    font-weight: normal;
+    padding: 8px;
+    color: #dadadae5;
+}
+#p1 .sm a {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid var(--whiteColor);
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px;
+    color: var(--whiteColor);
+
+}
+#p1 .sm a:hover {
+    background-color: transparent;
+    color: #ed6663;
+}
+.cls-1 {
+    /*background-color: #182127;*/
+    padding: 40px;
+    background-color: #171E28;
+}
+.cls-1 > * {
+    width: 850px;
+    margin: 15px auto;
+}
+.cls-1 .info1 {
+    display: flex;
+    width: 850px;
+    margin: 15px auto 60px;
+    justify-content: space-between;
+}
+.info1 p{
+    color: #dadadae5;
+    font-size: 18px;
+    
+}
+.info1 .sinfo span {
+    color: var(--whiteColor);
+    padding: 10px;
+    font-weight: bold;
+} 
+.cls-1 h2{
+    font-size: 4em;
+    margin: 30px auto ;
+    color: var(--whiteColor);
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    color: var(--whiteColor);
+    margin: 80px 20px 0px;
+    width: 137px;
+    
+}
+.right .srighit {
+    width: 73px;
+    text-align: right;
+    margin: 12px;
+    
+}
+.right .srighit p {
+    font-weight: bold;
+}
+.right .srighit img,.srighit-2 img {
+    height: 25px;
+    margin: 5px -2px;
+}
+.right .srighit span {
+    font-weight: bold;
+    font-size: 21px;
+}
+.about2 {
+    display: flex;
+    
+}
+.left {
+    position: relative;
+    padding: 0px 20px;
+    color: var(--whiteColor);
+    
+}
+.left::before {
+    content: "";
+    position: absolute;
+    background-color: #dadadae5;
+    height: 100%;
+    width: 2px;
+    left: -5px;
+}
+.about2 .left p span {
+    display: block;
+    margin: 30px 0px;
+}
+.about2 .left p #sp1 {
+    font-weight: bold;
+}
+.about2 .left a {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #ed6663;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: var(--whiteColor);
+}
+
+.about2 .left a:hover {
+    color: #303a52;
+    background-color: var(--whiteColor);
+}
+.about2 .left img {
+    display: block;
+    height: 50px;
+    margin: 0px 20px;
+}
+.cls-1:nth-child(2n+1) {
+    background-color: var(--mainColor);
+}
+.left > p {
+    margin: 30px auto;
+}
+.skill {
+    width: 500px;
+    margin: auto;
+    color: var(--whiteColor);
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) ;
+    background-color: var(--secendrayColor);
+    border-radius: 15px;
+}
+.skill h3 {
+    margin: 5px;
+    font-size: 1.6em;
+	color: var(--colorthree);
+}
+.skill li {
+    margin: 20px 0;
+    padding: 10px;
+}
+.skill .bar {
+    background-color: #353b48;
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) ;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.skill .bar:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22) ;
+}
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, #ec008c 0%,#fc6767 100%);
+    border-radius: 10px;
+}
+.html {
+    width: 90%;
+    animation: html 3s;
+}
+.css {
+    width: 75%;
+    animation: css 3s;
+}
+.python {
+    width: 65%;
+    animation: python 3s;
+}
+.javascript {
+    width: 60%;
+    animation: javascript 3s;
+}
+.photoshop {
+    width: 40%;
+    animation: photoshop 3s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes python {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes photoshop {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+.information {
+    display: flex;
+    padding: 20px;
+    margin: 20px auto;
+    
+}
+.info-right {
+    margin:  0px auto;
+}
+.s-information {
+    width: 170px;
+    margin: auto;
+}
+.s-information span {
+    color: #6e6e6ee5;
+}
+.s-information h4 {
+    margin: 10px auto;
+    color: var(--colorthree);
+}
+.s-information h5 {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.s-information p {
+    color: #b4b2b2e5;
+    line-height: 1.6;
+}
+.projects .project {
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+}
+.project img {
+    width: 300px;
+    border-radius: 10px;
+}
+.project div {
+    padding: 20px 40px;
+    color: #b4b2b2e5;
+    position: relative;
+}
+.project div h4 {
+    color: var(--colorthree);
+    font-size: 1.6em;
+}
+.project div a {
+    display: inline-block;
+    position: absolute;
+    bottom: -15;
+    right: 0;
+    background-color: transparent;
+    color: var(--colorthree);
+    border: 1px solid var(--whiteColor);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.project div a:hover {
+    background-color: var(--whiteColor);
+    color: var(--secendrayColor);
+}
+.projects button {
+    display: block;
+    width: 150px;
+    margin: auto;
+    border: 1px solid var(--whiteColor);
+    color: var(--colorthree);
+    padding: 10px;
+    font-weight: bold; 
+    border-radius: 10px;
+    background-color: transparent;
+}
+.projects button:hover {
+    background-color: var(--whiteColor);
+    color: var(--secendrayColor);
+}
+
+.table {
+    display: flex;
+    margin: 40px auto;
+}
+.s-table {
+    margin: auto 20px;
+    color: var(--whiteColor);
+    padding: 30px;
+    background-color: var(--secendrayColor);
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) ;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.s-table .info-table {
+    line-height: 1.6; 
+    text-align: center; 
+} 
+.s-table .info-table h4 {
+    color: var(--colorthree);
+    font-size: 1.6em;
+} 
+.s-table .info-table p {
+    color: #b4b2b2e5;
+    margin: 10px auto;
+}
+.s-table .info-table span {
+    font-weight: bold;
+    font-size: 1.4em;
+
+}
+.s-table .info-table a {
+    width: 100px;
+    display: inline-block;
+    background-color: #ff7200;
+    color: var(--whiteColor);
+    border: 1px solid var(--whiteColor);
+    padding: 8px;
+    border-radius: 10px;
+    margin: 8px;
+}
+.s-table .info-table a:hover {
+    background-color: var(--whiteColor);
+    color: var(--secendrayColor);
+}
+.s-table:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22) ;
+}
+.left form {
+    display: flex;
+    flex-direction: column;
+}
+.left form label {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.left form input,.left form textarea {
+    background-color: transparent;
+    padding: 8px;
+    border: 2px solid #303a52;
+    resize: vertical;
+    min-height: 10px;
+    color: var(--whiteColor);
+    font-weight: bold;
+}
+.left form input,.left form textarea:focus {
+    outline: none;
+}
+.right .srighit-2 {
+    width: 125px;
+    text-align: right;
+    margin: 12px;
+    
+}
+.right .srighit-2 a{
+    display: block;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: var(--whiteColor);
+}
+.right .srighit-2 a:hover {
+    color: var(--colorthree);
+}
+footer {
+    background-color: var(--mainColor);
+    padding: 15px;
+    text-align: center;
+}
+
+@media screen and (min-width : 600px) and  (max-width :992px ){
+    header {
+        width: auto;
+        flex-direction: column;
+    }
+    * {
+        text-align: center;
+    }
+    label,.skill ul li h4 , input, textarea {
+        text-align: left;
+    }
+    header {
+        flex-direction: column;
+        width: auto;
+    }
+    header h1 {
+        /* font-size: 2.5em; */
+        font-size: 2.8em;
+    }
+    .cls-1 {
+        padding: 25px;
+    }
+    .cls-1 > * {
+        width: auto;
+        margin: 15px auto;
+    }
+    .cls-1 .info1 {
+        flex-direction: column;
+        width: auto;
+    } 
+    .cls-1 h2{
+        display: inline-block;
+        font-size: 4em;
+        margin: 30px auto ;
+    }
+    .sinfo p {
+        margin: 15px;
+    }
+    .about2 {
+        flex-direction: column;
+    }
+    .about2 .right{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+
+    }
+    .skill {
+        width: 60%;
+        margin: auto;
+        
+    }
+    .information {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    .s-information {
+        width: 100%;
+    }
+    .info-0 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .info-0 .info-1 {
+        margin: auto 20px;
+    }
+    .s-information h4 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .s-information .exp h5,.info-0 .info-1 h5 {
+        font-size: 1em;
+    }
+    .right .srighit img,.srighit-2 img {
+        display: block;
+        height: 30px;
+        margin: 10px auto;
+    }
+    
+    .project {
+        flex-direction: column;
+    }
+    .project > div {
+        width: 225px;
+        border: 1px solid var(--whiteColor);
+        border-radius: 0px 0px 10px 10px ;
+    }
+    .project img {
+        width: 307px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .project > div a {
+        position: relative;
+        margin: 10px;
+    }
+    .table {
+        flex-direction: column;
+    }
+    .table .s-table {
+        margin: 20px auto;
+    }
+    
+    
+}
+@media screen and (max-width : 600px) {
+    * {
+        text-align: center;
+    }
+    label,.skill ul li h4 {
+        text-align: left;
+    }
+    header {
+        flex-direction: column;
+        width: auto;
+    }
+    header h1 {
+        /* font-size: 1.5em; */
+        font-size: 2.5em;
+    }
+    .cls-1 {
+        padding: 20px;
+    }
+    .cls-1 > * {
+        width: auto;
+        margin: 15px auto;
+    }
+    .cls-1 .info1 {
+        flex-direction: column;
+        width: auto;
+    } 
+    .cls-1 h2{
+        display: inline-block;
+        font-size: 4em;
+        margin: 30px auto ;
+    }
+    .sinfo p {
+        margin: 10px;
+    }
+    .about2 {
+        flex-direction: column;
+    }
+    .about2 .right{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+
+    }
+    .skill {
+        width: auto;
+        
+    }
+    .information {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+    }
+    .s-information {
+        width: 100%;
+    }
+    .info-0 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .info-0 .info-1 {
+        margin: auto 20px;
+    }
+    .s-information h4 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .s-information .exp h5,.info-0 .info-1 h5 {
+        font-size: 1em;
+    }
+    .right .srighit img,.srighit-2 img {
+        display: block;
+        height: 30px;
+        margin: 10px auto;
+    }
+    .project {
+        flex-direction: column;
+    }
+    .project > div {
+        width: 220px;
+        border: 1px solid var(--whiteColor);
+        border-radius: 0px 0px 10px 10px ;
+    }
+    .project img {
+        border-radius: 10px 10px 0px 0px;
+    }
+    .project > div a {
+        position: relative;
+        margin: 10px;
+    }
+    .table {
+        flex-direction: column;
+    }
+    .table .s-table {
+        margin: 20px auto;
+    }  
+}
